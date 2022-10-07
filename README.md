@@ -1,6 +1,6 @@
 # spreadsheet-excel-demo
 
-###example
+### example
 ```
 <body onload="load()">
   <div id="x-spreadsheet-demo"></div>
@@ -17,9 +17,7 @@
 ```
 
 
-spreadsheet-excel
-
-效果图
+### spreadsheet-excel 效果图
 
 ![image](https://user-images.githubusercontent.com/29120060/194519458-b9c11cb4-5d55-4968-b969-db5cc1c0219a.png)
 
