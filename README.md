@@ -2,15 +2,17 @@
 
 ### example
 ```
-<body onload="load()">
-  <div id="x-spreadsheet-demo"></div>
+<body >
+  <div id="wrapper"></div>
   <script>
-   function load(){
-      x.spreadsheet('#x-spreadsheet-demo').loadData({}).change(function(data){
-			    console.log(data)
-			    localStorage.setItem('key',JSON.stringify(data));
-		  });
-   }
+        window.onload = function () {
+              DaView = localStorage.getItem('keysasas');
+              DaView = JSON.parse(DaView)
+              xspreadsheet(document.getElementById('wrapper')).loadData((DaView)).change(function (data) {
+                    console.log('data:', JSON.stringify(data))
+                    localStorage.setItem('keysasas', JSON.stringify(data));
+              });
+        }
   </script>
 <script type="text/javascript" src="xspreadsheet.js"></script>
 </body>
