@@ -14,6 +14,11 @@
               });
         }
   </script>
+    //  变更通知
+    // DaView = localStorage.getItem('keysasas');
+    // DaView = JSON.parse(DaView)
+    // xspreadsheet(document.getElementById('wrapper')).loadData((DaView))
+  
 <script type="text/javascript" src="xspreadsheet.js"></script>
 </body>
 ```
